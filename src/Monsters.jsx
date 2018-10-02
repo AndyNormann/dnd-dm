@@ -38,10 +38,12 @@ class Monsters extends React.Component {
           display: 'flex',
           justifyContent: 'center',
           flexDirection: 'column',
+          margin: '5px'
         }}
         onSubmit={e => {
           e.preventDefault();
           this.props.addMonster(this.state);
+          this.props.submit()
         }}
       >
         <Field
